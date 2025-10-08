@@ -1,9 +1,19 @@
 import './App.css';
-import Header from './components/Header/Header';
+import Cabinet from './pages/Cabinet/Cabinet';
+import { Route,Routes } from 'react-router-dom';
+import Home from './components/Home/Home'
+import Statistic from './components/Statistic/Statistic'
 
 function App() {
   return (
-    <Header></Header>
+    <div>
+      <Routes>
+        <Route path='/' element={<Cabinet></Cabinet>}>
+          <Route index path='home' element={<Home></Home>}></Route>
+          <Route path='statistic' element={<Statistic></Statistic>}></Route>
+        </Route>
+      </Routes>
+    </div>
   );
 }
 

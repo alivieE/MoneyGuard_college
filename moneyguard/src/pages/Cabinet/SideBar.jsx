@@ -7,33 +7,23 @@ const SideBar = () => {
   const [page, setPage] = useState("home");
 
   useEffect(() => {
-    try {
+  
       fetch('https://api.monobank.ua/bank/currency').then((data)=>{
         return data.json()
       }).then((res)=>{
-        console.log(res);
-        console.log(res.find((currency)=>{
-          return currency.currencyCodeA === 392
-        }));
-      })
-    } catch (error) {
-      
-    }
+console.log(res);
+if(res.errCode === 'TMR'){
+  console.log('too many requests');
+  return
+        }
+        // console.log(res.find((currency)=>{
+        //   return currency.currencyCodeA === 392
+        // }));
+      }).catch((error)=> {
+      console.log(error);
+     
+    })
   }, []);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   return (
     <div>
@@ -48,7 +38,14 @@ const SideBar = () => {
             to="home"
           >
             <div className="activeWrap">
-@@ -44,6 +45,7 @@
+              <img className={s.homeImage} src={page==='home'? Image.homeWhite:Image.home }></img>
+            </div>
+            Home
+          </NavLink>
+        </div>
+        <div></div>
+        <NavLink
+          onClick={() => {
             setPage("statistic");
           }}
           className={s.link}
@@ -56,7 +53,11 @@ const SideBar = () => {
           to="statistic"
         >
           <div className="activeWrap">
-@@ -54,10 +56,13 @@
+            <img className={s.statisticImage} src={page==='statistic'?Image.statisticWhite:Image.statistic}></img>
+          </div>
+          Statistic
+        </NavLink>
+
       </div>
       <div className={s.balance}>
         <p className={s.text}>YOUR BALANCE</p>

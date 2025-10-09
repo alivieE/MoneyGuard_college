@@ -4,7 +4,7 @@ import React from 'react'
 const Statistic = () => {
   return (
     <div>
-      Statictic
+      Statistic
     </div>
   )
 }

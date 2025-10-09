@@ -1,0 +1,146 @@
+.balanceValue{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.text{
+    color: rgba(255, 255, 255, 0.4);     
+    font-weight: 400;
+}
+
+.balance{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 0px 11px 56px;
+    
+}
+
+.balanceCount{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 8px;
+}
+
+.currency{
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+    padding: 20px;
+}
+
+.homeLink{
+    display: flex;
+    
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+    gap: 15px;
+
+    
+}
+.homeImage,.statisticImage{
+    
+    display: block;
+   
+}
+
+.sideBar{
+    width: 480px;
+    background-color: #3E1D95;
+    display: block;
+    
+}
+
+.table{
+
+    width: 100%;
+    margin-top: 32px;
+}
+
+.tdUSD{
+    text-align: center;
+    width: 33%;
+    padding: 24px 24px 12px 24px;
+    color: white;
+    font-weight: 400;
+}
+
+.tdEUR{
+    text-align: center;
+    width: 33%;
+    padding: 12px 24px 24px 24px;
+    color: white;
+    font-weight: 400;
+}
+
+
+.th{
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;    
+    font-weight: 600;
+}
+
+.waves{
+    position: relative;
+    padding-top: 60px;
+}
+
+.orangeVector{
+    position: absolute;
+    top:30px;
+    left: 0;
+}
+
+.pointOne{
+    border: 1px solid #FF868D;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    position: absolute;
+    top:61px ;
+    left: 57px;
+    background-color: #3E1D95;
+}
+
+.pointTwo{
+    border: 1px solid #FF868D;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    position: absolute;
+    top:27px;
+    left: 363px;
+    background-color: #3E1D95;
+}
+
+.countOne{
+    position: absolute;
+    top:45px;
+    left: 46px;
+    color: #FF868D;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.countTwo{
+    position: absolute;
+    top: 11px;
+    left: 350px;
+    color: #FF868D;
+    font-size: 12px;
+    font-weight: 400
+}

@@ -1,17 +1,24 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Header from '../../components/Header/Header'
-import SideBar from './SideBar'
+import SideBar from '../../components/SideBar/SideBar'
 import { Outlet } from 'react-router-dom'
+import s from './Cabinet.module.css'
+// import AddModal from '../../components/AddModal/AddModal'
+
+
 
 
 const Cabinet = () => {
+
   return (
     <div>
       <Header></Header>
-      <div>
+      <div className={s.mainWrap}>
         <SideBar></SideBar>
-        <Outlet></Outlet>
+        <Outlet ></Outlet>
+        
       </div>
+      
     </div>
   )
 }

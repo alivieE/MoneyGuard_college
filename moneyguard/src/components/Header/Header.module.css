@@ -2,11 +2,12 @@
   background-color: #2E1D55; 
   display: flex;
   justify-content: space-between; 
+  padding:  15px;
 }
 
 .logo{
   width: 115px;
-  padding-top: 10px;
+
 }
 
 .img {

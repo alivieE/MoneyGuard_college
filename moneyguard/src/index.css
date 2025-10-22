@@ -90,10 +90,6 @@ video {
   vertical-align: baseline;
   box-sizing: border-box;
 }
-.body {
-  font-family: "IBM Plex Sans", sans-serif;
-  background-color: #060307;
-}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -116,7 +112,6 @@ section {
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #060307;
 }
 menu,
 ol,
